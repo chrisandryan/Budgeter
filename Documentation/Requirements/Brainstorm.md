@@ -29,12 +29,44 @@ Budgeting App
     * Currency?
     * Others
 
+Note: Make sure all money types are stored in pence or multiplied by 100 before doing calculations to avoid overflow.
+
 
 **Outline Class structure**
 * Main Class
-* Accounts Class
-* Categories Class
-* Transactions Class
-* Reports Class   
+* Account Class
+    * Name
+    * Balance
+* Category Class
+    * Name
+    * Type (Income/Expenditure - Could use +1, -1 as the value, this might be useful for making calculations)
+    * Budget
+* Transaction Class
+    * Name
+    * Category
+    * Amount
+    * Date
+    * Repeat
+* Report Class   
     Possible split each report into a class/Reports abstract class and each type as a concrete implementation
 * Settings Class
+
+
+**UI Outline**
+* Main display.
+    Could include the following filters:
+    * Account Filter (Options = All, list of user created accounts).
+    * Category Filter (Options = All, list of user created accounts).
+    * Date from (Options = None, list of user created accounts).
+    * Date to (Options = None, list of user created accounts).
+
+    Could calculate and display the balance based on the filters.
+
+    Could include navigational buttons for the following:
+    * View transactions as a list.
+    * View transactions as a graph
+* Create/Edit account.
+* Create/Edit category.
+* Create/Edit transaction.
+* View transactions as a list.
+* View transactions as a graph?
