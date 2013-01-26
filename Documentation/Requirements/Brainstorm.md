@@ -54,19 +54,14 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 
 **UI Outline**
 * Main display.
-    Could include the following filters:
-    * Account Filter (Options = All, list of user created accounts).
-    * Category Filter (Options = All, list of user created accounts).
-    * Date from (Options = None, list of user created accounts).
-    * Date to (Options = None, list of user created accounts).
-
-    Could calculate and display the balance based on the filters.
-
-    Could include navigational buttons for the following:
-    * View transactions as a list.
-    * View transactions as a graph
+   * [Input] Account Filter (Options = All, list of user created accounts).
+   * [Input] Category Filter (Options = All, list of user created accounts).
+   * [Input] Date from (Options = None, list of user created accounts).
+   * [Input] Date to (Options = None, list of user created accounts).
+   * [Output] Balance (based on filters).
+   * [Button] View transactions as a list.
+   * [Button] View transactions as a graph?
 * Create/Edit account.
 * Create/Edit category.
 * Create/Edit transaction.
 * View transactions as a list.
-* View transactions as a graph?
