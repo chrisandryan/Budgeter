@@ -24,8 +24,9 @@ Budgeting App
     * Income over time
     * Income by category
     * Others
-    * Setting
+* Setting
     * Set month beginning and end dates
+    * Currency?
     * Others
 
 
@@ -35,5 +36,5 @@ Budgeting App
 * Categories Class
 * Transactions Class
 * Reports Class   
-    Possible split each report into a class/Reports abstract class and each type as a concrete implimentation
+    Possible split each report into a class/Reports abstract class and each type as a concrete implementation
 * Settings Class
