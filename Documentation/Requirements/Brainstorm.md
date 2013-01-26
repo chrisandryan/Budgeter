@@ -30,10 +30,10 @@ Budgeting App
 
 
 **Outline Class structure**
-Main Class
-Accounts Class
-Categories Class
-Transactions Class
-Reports Class
+* Main Class
+* Accounts Class
+* Categories Class
+* Transactions Class
+* Reports Class   
     Possible split each report into a class/Reports abstract class and each type as a concrete implimentation
-Settings Class
+* Settings Class
