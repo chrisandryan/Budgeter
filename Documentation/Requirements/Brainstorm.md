@@ -53,7 +53,7 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 
 
 **UI Outline**
-* Main display.
+* [Main display](https://docs.google.com/drawings/d/1vZ7jk2y31Zb0QZriU1D7zoWvXS-H-IDw8ZXIryVWODE/edit).
     * [Input] Account Filter (Options = All, list of user created accounts).
     * [Input] Category Filter (Options = All, list of user created accounts).
     * [Input] Date from (Options = None, list of user created accounts).
@@ -76,3 +76,4 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 * View transactions as a list.
     * List of transactions that display the transaction name, account name, category name, date and repeat.
     * [Button] Back (Might be built-in on Android).
+* Settings
