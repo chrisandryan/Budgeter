@@ -53,14 +53,9 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 
 
 **UI Outline**
-* [Main display](https://docs.google.com/drawings/d/1vZ7jk2y31Zb0QZriU1D7zoWvXS-H-IDw8ZXIryVWODE/edit).
-    * [Input] Account Filter (Options = All, list of user created accounts).
-    * [Input] Category Filter (Options = All, list of user created accounts).
-    * [Input] Date from (Options = None, list of user created accounts).
-    * [Input] Date to (Options = None, list of user created accounts).
-    * [Output] Balance (based on filters).
-    * [Button] View transactions as a list.
-    * [Button] View transactions as a graph?
+* Accounts.
+* Budgets/Categories.
+* Transactions.
 * Create/Edit account.
     * Input field for each of the account class fields.
     * [Button] Submit
@@ -73,7 +68,4 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
     * Input field for each of the transaction class fields.
     * [Button] Submit
     * [Button] Cancel/Back (Might be built-in on Android).
-* View transactions as a list.
-    * List of transactions that display the transaction name, account name, category name, date and repeat.
-    * [Button] Back (Might be built-in on Android).
 * Settings
