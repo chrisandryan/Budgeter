@@ -54,7 +54,7 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 
 **UI Outline**
 * Accounts.
-* Budgets/Categories.
+* [Budgets/Categories](https://docs.google.com/drawings/d/1RM5IkOOLDjHiFRMeZ7rex5PEmfDqakSZkj_XsONUcpQ/edit).
 * Transactions.
 * Create/Edit account.
     * Input field for each of the account class fields.
