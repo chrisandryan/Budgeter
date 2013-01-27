@@ -39,8 +39,7 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
     * Balance
 * Category Class
     * Name
-    * Type (Income/Expenditure - Could use +1, -1 as the value, this might be useful for making calculations)
-    * Budget
+    * Budget (positive/negative budget?)
 * Transaction Class
     * Name
     * Category
@@ -53,19 +52,7 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 
 
 **UI Outline**
-* Accounts.
+* [Accounts](https://docs.google.com/drawings/d/1tuL8VGgVeqM04PrUxh6Po6BIvPMAYP7S-Y7Ed7Q5Fc8/edit).
 * [Budgets/Categories](https://docs.google.com/drawings/d/1RM5IkOOLDjHiFRMeZ7rex5PEmfDqakSZkj_XsONUcpQ/edit).
-* Transactions.
-* Create/Edit account.
-    * Input field for each of the account class fields.
-    * [Button] Submit
-    * [Button] Cancel/Back (Might be built-in on Android).
-* Create/Edit category.
-    * Input field for each of the category class fields.
-    * [Button] Submit
-    * [Button] Cancel/Back (Might be built-in on Android).
-* Create/Edit transaction.
-    * Input field for each of the transaction class fields.
-    * [Button] Submit
-    * [Button] Cancel/Back (Might be built-in on Android).
+* [Transactions](https://docs.google.com/drawings/d/156GGZiG44f8jHVfh2B33xfX2A6DHN5jDbkkrabknmfg/edit).
 * Settings
