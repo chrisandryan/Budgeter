@@ -1,5 +1,7 @@
 Budgeting App
 
+[Functionality documentation](https://docs.google.com/document/d/1RIt_p-aMQdtPR8qCvrFNYWUT6CQIoybyYI8XnQ4uuQg/edit#)
+
 **Features**
 * Accounts
     * Users can create multiple accounts – ie Current Account, Savings account, Debts owed to people etc.
