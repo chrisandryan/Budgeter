@@ -36,16 +36,17 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 * Main Class
 * Account Class
     * Name
-    * Balance
+    * Balance (can be negative)
 * Category Class
     * Name
-    * Budget (positive/negative budget?)
+    * Budget
+    * Type (In/Out) (Is this required? Could we just say that if the budget is 0 then it must be income because you would not set a budget on income...)
 * Transaction Class
     * Name
     * Category
     * Amount
     * Date
-    * Repeat
+    * Repeat/Direct Debit (How will this be made useful? Direct debits can go out at very random times, so we can't just repeat the transaction every pay day.)
 * Report Class   
     Possible split each report into a class/Reports abstract class and each type as a concrete implementation
 * Settings Class
@@ -55,4 +56,8 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 * [Accounts](https://docs.google.com/drawings/d/1tuL8VGgVeqM04PrUxh6Po6BIvPMAYP7S-Y7Ed7Q5Fc8/edit).
 * [Budgets/Categories](https://docs.google.com/drawings/d/1RM5IkOOLDjHiFRMeZ7rex5PEmfDqakSZkj_XsONUcpQ/edit).
 * [Transactions](https://docs.google.com/drawings/d/156GGZiG44f8jHVfh2B33xfX2A6DHN5jDbkkrabknmfg/edit).
+    * Adding a transaction could be made quicker by allowing the user to select an Account and a Category in the previously mentioned displays (if multiple are selected it could use the last selected - quicker than deselecting all of them and selecting the one required). Then all the user needs to do is enter a name for the transaction and an amount. Income or outcome will be determined by the chosen category.
+    * Is the date of the transaction needed in the display or is the fact that it shows the filter dates good enough?
+    * User should be able to select an account and category on the previously mentioned displays and this should filter out the transaction (if none are selected it should not filter).
 * Settings
+**Help text should be provided at the bottom to display errors, warnings, tips and general help**
