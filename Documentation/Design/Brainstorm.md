@@ -59,8 +59,5 @@ Note: Make sure all money types are stored in pence or multiplied by 100 before 
 * [Budgets/Categories](https://docs.google.com/drawings/d/1RM5IkOOLDjHiFRMeZ7rex5PEmfDqakSZkj_XsONUcpQ/edit).
 * [BudgetsV2](https://docs.google.com/drawings/d/1Q-dyiVXUnaEccuY-9pT-EA3VtoAnp3Y4ey0yWvxfnHA/edit)
 * [Transactions](https://docs.google.com/drawings/d/156GGZiG44f8jHVfh2B33xfX2A6DHN5jDbkkrabknmfg/edit).
-    * Adding a transaction could be made quicker by allowing the user to select an Account and a Category in the previously mentioned displays (if multiple are selected it could use the last selected - quicker than deselecting all of them and selecting the one required). Then all the user needs to do is enter a name for the transaction and an amount. Income or outcome will be determined by the chosen category.
-    * Is the date of the transaction needed in the display or is the fact that it shows the filter dates good enough?
-    * User should be able to select an account and category on the previously mentioned displays and this should filter out the transaction (if none are selected it should not filter).
 * Settings
 **Help text should be provided at the bottom to display errors, warnings, tips and general help**
