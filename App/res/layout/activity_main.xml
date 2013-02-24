@@ -81,16 +81,19 @@
 	            style="@style/Button"
 	            android:layout_width="35dp"
 	        	android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
             <TextView
             	android:id="@+id/lblDateFrom"
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
             <Button
 	            android:id="@+id/btnNextDateFrom"
 	            style="@style/Button"
 	            android:layout_width="35dp"
 	        	android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
         </LinearLayout>
         
         <!-- Container for the "date to" filter. -->	
@@ -104,16 +107,19 @@
 	            style="@style/Button"
 	            android:layout_width="35dp"
 	        	android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
             <TextView
             	android:id="@+id/lblDateTo"
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
             <Button
 	            android:id="@+id/btnNextDateTo"
 	            style="@style/Button"
 	            android:layout_width="35dp"
 	        	android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
         </LinearLayout>
         	
         <!-- Container for the "flow" (income/outgoing/all) filter. -->
@@ -128,16 +134,19 @@
 	            style="@style/Button"
 	            android:layout_width="35dp"
 	        	android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
             <TextView
             	android:id="@+id/lblFlow"
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
             <Button
 	            android:id="@+id/btnNextFlow"
 	            style="@style/Button"
 	            android:layout_width="35dp"
 	        	android:layout_height="35dp" />
+        		android:layout_gravity="center_horizontal" />
         </LinearLayout>
         
         <!-- TODO: Add top and bottom padding. -->
