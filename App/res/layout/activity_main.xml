@@ -21,6 +21,7 @@
             android:layout_height="35dp"
             android:text="@string/app_name"
             android:textColor="@string/colour_white" />
+       		android:gravity="center"
 
         <!-- Context-sensitive add button, adds a new item. -->
         <Button
@@ -87,6 +88,7 @@
 	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
         		android:text="12 February 2013"
+        		android:gravity="center"
             <Button
 	            android:id="@+id/btnNextDateFrom"
 	            style="@style/Button"
@@ -114,6 +116,7 @@
 	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
         		android:text="12 March 2013"
+        		android:gravity="center"
             <Button
 	            android:id="@+id/btnNextDateTo"
 	            style="@style/Button"
@@ -142,6 +145,7 @@
 	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
         		android:text="all"
+        		android:gravity="center"
             <Button
 	            android:id="@+id/btnNextFlow"
 	            style="@style/Button"
