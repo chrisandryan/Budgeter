@@ -8,6 +8,7 @@
 
     <!-- Header element. -->
     <RelativeLayout
+        android:id="@+id/grpHeader"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:background="@string/colour_blue" >
@@ -15,30 +16,27 @@
         <!-- Title/Name of the application. -->
         <TextView
             android:id="@+id/lblTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
+            style="@style/Text.Large"
             android:text="@string/app_name"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@string/colour_white" />
 
         <!-- Context-sensitive add button, adds a new item. -->
         <Button
             android:id="@+id/btnAdd"
-            style="@style/Button"
-            android:layout_marginRight="105dp"
-            android:layout_alignParentRight="true" />
+            style="@style/Button.Right"
+            android:layout_marginRight="105dp" />
 
         <!-- Context-sensitive remove button, removes all selected items. -->
         <Button
             android:id="@+id/btnRemove"
-            style="@style/Button"
+            style="@style/Button.Right"
             android:layout_marginRight="70dp"
             android:layout_alignParentRight="true" />
 
         <!-- Transactions button, takes user to the transactions screen. -->
         <Button
             android:id="@+id/btnTransactions"
-            style="@style/Button"
+            style="@style/Button.Right"
             android:layout_marginRight="35dp"
             android:layout_alignParentRight="true" />
 
@@ -55,25 +53,21 @@
     
     <!-- Container to vertically display all filters. -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/grpFilters"
+        style="@style/LinearWrap.Vertical"
         android:background="@string/colour_light_gray"
-        android:orientation="vertical" >
+        android:layout_below="@id/grpHeader" >
 		
         <!-- Container for the "date from" filter. -->
         <LinearLayout
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:alpha="0"
-	        android:orientation="horizontal"
-	        android:layout_gravity="center_horizontal" >
+	        style="LinearWrap.Horizontal.Filter" >
             
             <Button
 	            android:id="@+id/btnPreviousDateFrom"
 	            style="@style/Button" />
             <TextView
             	android:id="@+id/lblDateFrom"
-	            style="@style/FilterText" />
+	            style="@style/Text.Filter" />
             <Button
 	            android:id="@+id/btnNextDateFrom"
 	            style="@style/Button" />
@@ -81,18 +75,14 @@
         
         <!-- Container for the "date to" filter. -->	
         <LinearLayout
-	        android:layout_width="match_parent"
-	        android:layout_height="wrap_content"
-	        android:alpha="0"
-	        android:orientation="horizontal"
-	        android:layout_gravity="center_horizontal">
+	        style="LinearWrap.Horizontal.Filter" >
             
             <Button
 	            android:id="@+id/btnPreviousDateTo"
 	            style="@style/Button" />
             <TextView
             	android:id="@+id/lblDateTo"
-	            style="@style/FilterText" />
+	            style="@style/Text.Filter" />
             <Button
 	            android:id="@+id/btnNextDateTo"
 	            style="@style/Button" />
@@ -101,14 +91,14 @@
         <!-- Container for the "flow" (income/outgoing/all) filter. -->
         <LinearLayout
         	android:id="@+id/grpFlowFilter"
-	        style="FilterContainer">
+	        style="LinearWrap.Horizontal.Filter" >
 	        
             <Button
 	            android:id="@+id/btnPreviousFlow"
 	            style="@style/Button" />
             <TextView
             	android:id="@+id/lblFlow"
-	            style="@style/FilterText" />
+	            style="@style/Text.Filter" />
             <Button
 	            android:id="@+id/btnNextFlow"
 	            style="@style/Button" />
@@ -120,20 +110,18 @@
     <!-- Container to vertically list accounts, budgets, and transactions. -->
     <LinearLayout
         android:id="@+id/grpItems"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/LinearWrap.Vertical"
         android:background="@string/colour_white"
-        android:orientation="vertical" >
+        android:layout_below="@id/grpFilters" >
 
     </LinearLayout>
     
     <!-- Container to horizontally displays circles representing different screens. -->
 	<LinearLayout
         android:id="@+id/grpScreens"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/LinearWrap.Horizontal"
         android:background="@string/colour_light_gray"
-        android:orientation="horizontal">
+        android:layout_alignParentBottom="true" >
 	    
 	    <!-- TODO: Add circles. -->
 	</LinearLayout>
@@ -141,11 +129,9 @@
 	<!-- Container to vertically display summary information. -->
 	<LinearLayout
         android:id="@+id/grpSummary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/LinearWrap.Vertical"
         android:background="@string/colour_light_gray"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:visibility="gone" >
         
 	    <!-- TODO: Determine layout colour and size properties. -->
 	</LinearLayout>

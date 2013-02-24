@@ -17,23 +17,42 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     
+    <!-- Text styles. -->
+    <style name="Text">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="Text.Large">
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="Text.Filter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@string/colour_dark_gray</item>
+    </style>
+    
+    <!-- Button styles. -->
     <style name="Button">
         <item name="android:layout_width">35dp</item>
         <item name="android:layout_height">35dp</item>
         <item name="android:alpha">0</item>
     </style>
-    <style name="FilterText">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">35dp</item>
-        <item name="android:alpha">0</item>
-        <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@string/colour_dark_gray</item>
+    <style name="Button.Right">
+        <item name="android:layout_alignParentRight">true</item>
     </style>
-    <style name="FilterContainer">
+    
+    <!-- Linear layout styles. -->
+    <style name="LinearWrap">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:alpha">0</item>
+    </style>
+    <style name="LinearWrap.Horizontal">
         <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LinearWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="LinearWrap.Horizontal.Filter">
+        <item name="android:alpha">0</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
