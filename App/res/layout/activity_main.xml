@@ -86,6 +86,7 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
+        		android:text="12 February 2013"
             <Button
 	            android:id="@+id/btnNextDateFrom"
 	            style="@style/Button"
@@ -112,6 +113,7 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
+        		android:text="12 March 2013"
             <Button
 	            android:id="@+id/btnNextDateTo"
 	            style="@style/Button"
@@ -139,6 +141,7 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
+        		android:text="all"
             <Button
 	            android:id="@+id/btnNextFlow"
 	            style="@style/Button"
