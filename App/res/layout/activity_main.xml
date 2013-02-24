@@ -20,8 +20,9 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/app_name"
-            android:textColor="@string/colour_white" />
+            android:textColor="@string/colour_white"
        		android:gravity="center"
+       		android:paddingLeft="10dp" />
 
         <!-- Context-sensitive add button, adds a new item. -->
         <Button
@@ -86,9 +87,10 @@
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal" />
+        		android:layout_gravity="center_horizontal"
         		android:text="12 February 2013"
         		android:gravity="center"
+        		android:padding="10dp" />
             <Button
 	            android:id="@+id/btnNextDateFrom"
 	            style="@style/Button"
@@ -114,9 +116,10 @@
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal" />
+        		android:layout_gravity="center_horizontal"
         		android:text="12 March 2013"
         		android:gravity="center"
+        		android:padding="10dp" />
             <Button
 	            android:id="@+id/btnNextDateTo"
 	            style="@style/Button"
@@ -143,9 +146,10 @@
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
 	            android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal" />
+        		android:layout_gravity="center_horizontal"
         		android:text="all"
         		android:gravity="center"
+        		android:padding="10dp" />
             <Button
 	            android:id="@+id/btnNextFlow"
 	            style="@style/Button"
