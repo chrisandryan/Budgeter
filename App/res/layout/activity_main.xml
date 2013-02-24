@@ -1,11 +1,11 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     tools:ignore="MergeRootFrame" >
-    
+
     <!-- Header element. -->
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,7 +13,6 @@
         android:background="@string/colour_blue" >
 
         <!-- Title/Name of the application. -->
-
         <TextView
             android:id="@+id/lblTitle"
             android:layout_width="wrap_content"
@@ -25,36 +24,28 @@
         <!-- Context-sensitive add button, adds a new item. -->
         <Button
             android:id="@+id/btnAdd"
-            android:layout_width="35dp"
-            android:layout_height="match_parent"
-            android:background="@string/colour_transparent"
+            style="@style/Button"
             android:layout_marginRight="105dp"
             android:layout_alignParentRight="true" />
 
         <!-- Context-sensitive remove button, removes all selected items. -->
         <Button
             android:id="@+id/btnRemove"
-            android:layout_width="35dp"
-            android:layout_height="match_parent"
-            android:background="@string/colour_transparent"
+            style="@style/Button"
             android:layout_marginRight="70dp"
             android:layout_alignParentRight="true" />
 
         <!-- Transactions button, takes user to the transactions screen. -->
         <Button
             android:id="@+id/btnTransactions"
-            android:layout_width="35dp"
-            android:layout_height="match_parent"
-            android:background="@string/colour_transparent"
+            style="@style/Button"
             android:layout_marginRight="35dp"
             android:layout_alignParentRight="true" />
 
         <!-- Summary button, toggles a summary window. -->
         <Button
             android:id="@+id/btnSummary"
-            android:layout_width="35dp"
-            android:layout_height="match_parent"
-            android:background="@string/colour_transparent"
+            style="@style/Button"
             android:layout_alignParentRight="true" />
         
         <!-- TODO: Consider setting a constant for the width of buttons. -->
@@ -64,13 +55,66 @@
     
     <!-- Container to vertically display all filters. -->
     <LinearLayout
-        android:id="@+id/grpFilters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@string/colour_light_gray"
         android:orientation="vertical" >
-
-        <!-- TODO: Add filters. -->
+		
+        <!-- Container for the "date from" filter. -->
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:alpha="0"
+	        android:orientation="horizontal"
+	        android:layout_gravity="center_horizontal" >
+            
+            <Button
+	            android:id="@+id/btnPreviousDateFrom"
+	            style="@style/Button" />
+            <TextView
+            	android:id="@+id/lblDateFrom"
+	            style="@style/FilterText" />
+            <Button
+	            android:id="@+id/btnNextDateFrom"
+	            style="@style/Button" />
+        </LinearLayout>
+        
+        <!-- Container for the "date to" filter. -->	
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:alpha="0"
+	        android:orientation="horizontal"
+	        android:layout_gravity="center_horizontal">
+            
+            <Button
+	            android:id="@+id/btnPreviousDateTo"
+	            style="@style/Button" />
+            <TextView
+            	android:id="@+id/lblDateTo"
+	            style="@style/FilterText" />
+            <Button
+	            android:id="@+id/btnNextDateTo"
+	            style="@style/Button" />
+        </LinearLayout>
+        	
+        <!-- Container for the "flow" (income/outgoing/all) filter. -->
+        <LinearLayout
+        	android:id="@+id/grpFlowFilter"
+	        style="FilterContainer">
+	        
+            <Button
+	            android:id="@+id/btnPreviousFlow"
+	            style="@style/Button" />
+            <TextView
+            	android:id="@+id/lblFlow"
+	            style="@style/FilterText" />
+            <Button
+	            android:id="@+id/btnNextFlow"
+	            style="@style/Button" />
+        </LinearLayout>
+        
+        <!-- TODO: Add top and bottom padding. -->
     </LinearLayout>
     
     <!-- Container to vertically list accounts, budgets, and transactions. -->
@@ -93,6 +137,16 @@
 	    
 	    <!-- TODO: Add circles. -->
 	</LinearLayout>
-
-    <!-- TODO: Wrap all high-level containers in a relative layout. -->
-</FrameLayout>
+	
+	<!-- Container to vertically display summary information. -->
+	<LinearLayout
+        android:id="@+id/grpSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@string/colour_light_gray"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+	    <!-- TODO: Determine layout colour and size properties. -->
+	</LinearLayout>
+</RelativeLayout>

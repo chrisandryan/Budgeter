@@ -12,7 +12,6 @@
     <string name="colour_light_gray">#e7e7e7</string>
     <string name="colour_dark_gray">#b7b7b7</string>
     <string name="colour_medium_gray">#999</string>
-    <string name="colour_transparent">#00000000</string>
     <!-- Move colours to styles. -->
 
 </resources>
