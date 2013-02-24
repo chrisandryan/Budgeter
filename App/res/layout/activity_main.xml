@@ -56,8 +56,6 @@
         	android:layout_height="35dp"
             android:layout_alignParentRight="true" />
         
-        <!-- TODO: Consider setting a constant for the width of buttons. -->
-    	<!-- TODO: Add icons/images to buttons. -->
     	<!-- TODO: Add shadow. -->
     </RelativeLayout>
     
@@ -148,8 +146,6 @@
 	        	android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
         </LinearLayout>
-        
-        <!-- TODO: Add top and bottom padding. -->
     </LinearLayout>
     
     <!-- Container to vertically list accounts, budgets, and transactions. -->
@@ -195,8 +191,6 @@
             android:layout_width="35dp"
         	android:layout_height="35dp"
         	android:layout_gravity="center_horizontal" />
-	    
-	    <!-- TODO: Add circles. -->
 	</LinearLayout>
 	
 	<!-- Container to vertically display summary information. -->
@@ -210,4 +204,7 @@
         
 	    <!-- TODO: Determine layout colour and size properties. -->
 	</LinearLayout>
+	
+	<!-- TODO: Consider setting a more constants. -->
+   	<!-- TODO: Add icons/images to buttons. -->
 </RelativeLayout>
