@@ -19,10 +19,9 @@
     
     <!-- Text styles. -->
     <style name="Text">
-        <item name="android:layout_width">wrap_content</item>
+        <!-- Code may be required here in the future. -->
     </style>
     <style name="Text.Large">
-        <item name="android:layout_height">35dp</item>
         <item name="android:textSize">14sp</item>
     </style>
     <style name="Text.Filter">
@@ -32,8 +31,6 @@
     
     <!-- Button styles. -->
     <style name="Button">
-        <item name="android:layout_width">35dp</item>
-        <item name="android:layout_height">35dp</item>
         <item name="android:alpha">0</item>
     </style>
     <style name="Button.Right">
@@ -42,8 +39,7 @@
     
     <!-- Linear layout styles. -->
     <style name="LinearWrap">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <!-- Code may be required here in the future. -->
     </style>
     <style name="LinearWrap.Horizontal">
         <item name="android:orientation">horizontal</item>
