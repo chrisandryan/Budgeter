@@ -162,6 +162,30 @@
 		android:layout_height="wrap_content"
         android:background="@string/colour_light_gray"
         android:layout_alignParentBottom="true" >
+        
+	    <!-- Accounts button, takes the user to the accounts screen. -->
+        <Button
+            android:id="@+id/btnCircleAccounts"
+            style="@style/Button.Right"
+            android:layout_width="35dp"
+        	android:layout_height="35dp"
+        	android:layout_gravity="center_horizontal" />
+
+        <!-- Budgets button, takes the user to the budgets screen. -->
+        <Button
+            android:id="@+id/btnCircleBudgets"
+            style="@style/Button.Right"
+            android:layout_width="35dp"
+        	android:layout_height="35dp"
+        	android:layout_gravity="center_horizontal" />
+
+        <!-- Transactions button, takes user to the transactions screen. -->
+        <Button
+            android:id="@+id/btnCircleTransactions"
+            style="@style/Button.Right"
+            android:layout_width="35dp"
+        	android:layout_height="35dp"
+        	android:layout_gravity="center_horizontal" />
 	    
 	    <!-- TODO: Add circles. -->
 	</LinearLayout>
