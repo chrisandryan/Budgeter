@@ -80,19 +80,19 @@
 	            android:id="@+id/btnPreviousDateFrom"
 	            style="@style/Button"
 	            android:layout_width="35dp"
-	        	android:layout_height="35dp" />
+	        	android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
             <TextView
             	android:id="@+id/lblDateFrom"
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
-	            android:layout_height="35dp" />
+	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
             <Button
 	            android:id="@+id/btnNextDateFrom"
 	            style="@style/Button"
 	            android:layout_width="35dp"
-	        	android:layout_height="35dp" />
+	        	android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
         </LinearLayout>
         
@@ -106,19 +106,19 @@
 	            android:id="@+id/btnPreviousDateTo"
 	            style="@style/Button"
 	            android:layout_width="35dp"
-	        	android:layout_height="35dp" />
+	        	android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
             <TextView
             	android:id="@+id/lblDateTo"
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
-	            android:layout_height="35dp" />
+	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
             <Button
 	            android:id="@+id/btnNextDateTo"
 	            style="@style/Button"
 	            android:layout_width="35dp"
-	        	android:layout_height="35dp" />
+	        	android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
         </LinearLayout>
         	
@@ -133,19 +133,19 @@
 	            android:id="@+id/btnPreviousFlow"
 	            style="@style/Button"
 	            android:layout_width="35dp"
-	        	android:layout_height="35dp" />
+	        	android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
             <TextView
             	android:id="@+id/lblFlow"
 	            style="@style/Text.Filter"
 	            android:layout_width="wrap_content"
-	            android:layout_height="35dp" />
+	            android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
             <Button
 	            android:id="@+id/btnNextFlow"
 	            style="@style/Button"
 	            android:layout_width="35dp"
-	        	android:layout_height="35dp" />
+	        	android:layout_height="35dp"
         		android:layout_gravity="center_horizontal" />
         </LinearLayout>
         
@@ -166,7 +166,7 @@
     <!-- Container to horizontally displays circles representing different screens. -->
 	<LinearLayout
         android:id="@+id/grpScreens"
-        style="@style/LinearWrap.Horizontal"
+        style="@style/LinearWrap.Horizontal.Filter"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
         android:background="@string/colour_light_gray"
