@@ -4,4 +4,95 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="MergeRootFrame" />
+    tools:ignore="MergeRootFrame" >
+    
+    <!-- Header element. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@string/colour_blue" >
+
+        <!-- Title/Name of the application. -->
+
+        <TextView
+            android:id="@+id/lblTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@string/colour_white" />
+
+        <!-- Context-sensitive add button, adds a new item. -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="@string/colour_transparent"
+            android:layout_marginRight="105dp"
+            android:layout_alignParentRight="true" />
+
+        <!-- Context-sensitive remove button, removes all selected items. -->
+        <Button
+            android:id="@+id/btnRemove"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="@string/colour_transparent"
+            android:layout_marginRight="70dp"
+            android:layout_alignParentRight="true" />
+
+        <!-- Transactions button, takes user to the transactions screen. -->
+        <Button
+            android:id="@+id/btnTransactions"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="@string/colour_transparent"
+            android:layout_marginRight="35dp"
+            android:layout_alignParentRight="true" />
+
+        <!-- Summary button, toggles a summary window. -->
+        <Button
+            android:id="@+id/btnSummary"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="@string/colour_transparent"
+            android:layout_alignParentRight="true" />
+        
+        <!-- TODO: Consider setting a constant for the width of buttons. -->
+    	<!-- TODO: Add icons/images to buttons. -->
+    	<!-- TODO: Add shadow. -->
+    </RelativeLayout>
+    
+    <!-- Container to vertically display all filters. -->
+    <LinearLayout
+        android:id="@+id/grpFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@string/colour_light_gray"
+        android:orientation="vertical" >
+
+        <!-- TODO: Add filters. -->
+    </LinearLayout>
+    
+    <!-- Container to vertically list accounts, budgets, and transactions. -->
+    <LinearLayout
+        android:id="@+id/grpItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@string/colour_white"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+    
+    <!-- Container to horizontally displays circles representing different screens. -->
+	<LinearLayout
+        android:id="@+id/grpScreens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@string/colour_light_gray"
+        android:orientation="horizontal">
+	    
+	    <!-- TODO: Add circles. -->
+	</LinearLayout>
+
+    <!-- TODO: Wrap all high-level containers in a relative layout. -->
+</FrameLayout>
