@@ -72,7 +72,7 @@
 		
         <!-- Container for the "date from" filter. -->
         <LinearLayout
-	        style="LinearWrap.Horizontal.Filter"
+	        style="@style/LinearWrap.Horizontal.Filter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
             
@@ -95,7 +95,7 @@
         
         <!-- Container for the "date to" filter. -->	
         <LinearLayout
-	        style="LinearWrap.Horizontal.Filter"
+	        style="@style/LinearWrap.Horizontal.Filter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
             
@@ -119,7 +119,7 @@
         <!-- Container for the "flow" (income/outgoing/all) filter. -->
         <LinearLayout
         	android:id="@+id/grpFlowFilter"
-	        style="LinearWrap.Horizontal.Filter"
+	        style="@style/LinearWrap.Horizontal.Filter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 	        
