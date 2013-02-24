@@ -48,8 +48,7 @@
         <item name="android:orientation">vertical</item>
     </style>
     <style name="LinearWrap.Horizontal.Filter">
-        <item name="android:alpha">0</item>
-        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
 </resources>
