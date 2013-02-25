@@ -1,10 +1,10 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
@@ -15,6 +15,40 @@
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- Text styles. -->
+    <style name="Text">
+        <!-- Code may be required here in the future. -->
+    </style>
+    <style name="Text.Large">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="Text.Filter">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@string/colour_dark_gray</item>
+    </style>
+    
+    <!-- Button styles. -->
+    <style name="Button">
+        <item name="android:alpha">0</item>
+    </style>
+    <style name="Button.Right">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    
+    <!-- Linear layout styles. -->
+    <style name="LinearWrap">
+        <!-- Code may be required here in the future. -->
+    </style>
+    <style name="LinearWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="LinearWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="LinearWrap.Horizontal.Filter">
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
 </resources>
