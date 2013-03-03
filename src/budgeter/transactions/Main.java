@@ -1,4 +1,4 @@
-package budgeter.main;
+package budgeter.transactions;
 import budgeter.accounts.*;
 
 import java.util.LinkedList;
@@ -20,14 +20,14 @@ public class Main extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_transactions);
         
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_main, menu);
+        getMenuInflater().inflate(R.menu.activity_transactions, menu);
         return true;
     }
     

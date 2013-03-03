@@ -1,4 +1,4 @@
-package budgeter.main;
+package budgeter.db;
 
 
 

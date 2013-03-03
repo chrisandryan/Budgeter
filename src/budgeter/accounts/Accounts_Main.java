@@ -1,30 +1,24 @@
 package budgeter.accounts;
 
-public class Accounts_Main {
+import com.example.budgeter.R;
 
-	private double getAccountBalance(){
-	//Implement when DB class is available	
-		return 1.0;
-	}
-	
-	private void setAccountBalance(){
-		
-	}
-	
-	private void setAccountName(){
-		
-	}
-	
-	private void getAccountName(){
-		
-	}
-	
-	private void setAlertLimit(){
-		
-	}
-	
-	private void getAlertLimit(){
-		
-	}
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
 
+public class Accounts_Main extends Activity{
+
+	 @Override
+	    protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.activity_accounts);
+	        
+	    }
+
+	    @Override
+	    public boolean onCreateOptionsMenu(Menu menu) {
+	        // Inflate the menu; this adds items to the action bar if it is present.
+	        getMenuInflater().inflate(R.menu.activity_accounts, menu);
+	        return true;
+	    }
 }
