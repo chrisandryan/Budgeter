@@ -26,7 +26,7 @@
     </style>
     <style name="Text.Filter">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@string/colour_dark_gray</item>
+        <item name="android:textColor">@color/colourDarkGray</item>
     </style>
     
     <!-- Button styles. -->

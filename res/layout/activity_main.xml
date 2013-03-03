@@ -3,15 +3,17 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colourLightGray"
     tools:context=".MainActivity"
     tools:ignore="MergeRootFrame" >
 
     <!-- Header element. -->
+
     <RelativeLayout
         android:id="@+id/grpHeader"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:background="@string/colour_blue" >
+        android:background="@color/colourBlue" >
 
         <!-- Title/Name of the application. -->
         <TextView
@@ -20,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/app_name"
-            android:textColor="@string/colour_white"
+            android:textColor="@color/colourWhite"
        		android:gravity="center"
        		android:paddingLeft="10dp" />
 
@@ -62,13 +64,14 @@
     </RelativeLayout>
     
     <!-- Container to vertically display all filters. -->
+
     <LinearLayout
         android:id="@+id/grpFilters"
         style="@style/LinearWrap.Vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@string/colour_light_gray"
-        android:layout_below="@id/grpHeader" >
+        android:layout_below="@id/grpHeader"
+        android:background="@color/colourLightGray" >
 		
         <!-- Container for the "date from" filter. -->
         <LinearLayout
@@ -160,24 +163,26 @@
     </LinearLayout>
     
     <!-- Container to vertically list accounts, budgets, and transactions. -->
+
     <LinearLayout
         android:id="@+id/grpItems"
         style="@style/LinearWrap.Vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@string/colour_white"
-        android:layout_below="@id/grpFilters" >
+        android:layout_below="@id/grpFilters"
+        android:background="@color/colourWhite" >
 
     </LinearLayout>
     
     <!-- Container to horizontally displays circles representing different screens. -->
+
 	<LinearLayout
-        android:id="@+id/grpScreens"
-        style="@style/LinearWrap.Horizontal.Filter"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-        android:background="@string/colour_light_gray"
-        android:layout_alignParentBottom="true" >
+	    android:id="@+id/grpScreens"
+	    style="@style/LinearWrap.Horizontal.Filter"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/colourLightGray" >
         
 	    <!-- Accounts button, takes the user to the accounts screen. -->
         <Button
@@ -205,13 +210,14 @@
 	</LinearLayout>
 	
 	<!-- Container to vertically display summary information. -->
+
 	<LinearLayout
-        android:id="@+id/grpSummary"
-        style="@style/LinearWrap.Vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@string/colour_light_gray"
-        android:visibility="gone" >
+	    android:id="@+id/grpSummary"
+	    style="@style/LinearWrap.Vertical"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/colourLightGray"
+	    android:visibility="gone" >
         
 	    <!-- TODO: Determine layout colour and size properties. -->
 	</LinearLayout>
