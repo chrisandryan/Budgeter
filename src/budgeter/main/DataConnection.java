@@ -1,4 +1,4 @@
-package com.example.budgeter;
+package budgeter.main;
 
 
 

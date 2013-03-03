@@ -1,15 +1,27 @@
-package com.example.budgeter;
+package budgeter.main;
+import budgeter.accounts.*;
+
+import java.util.LinkedList;
+
+import com.example.budgeter.R;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 
 public class Main extends Activity {
-
+	private LinkedList accounts;
+	
+	private void initAccounts(){
+		
+		accounts = new LinkedList();
+	}
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
     }
 
     @Override
