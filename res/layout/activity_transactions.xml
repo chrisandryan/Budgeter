@@ -3,7 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colourLightGray"
+    android:background="@color/lightGray"
     tools:context=".MainActivity"
     tools:ignore="MergeRootFrame" >
 
@@ -13,7 +13,7 @@
         android:id="@+id/grpHeader"
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:background="@color/colourBlue" >
+        android:background="@color/blue" >
 
         <!-- Title/Name of the application. -->
         <TextView
@@ -22,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:text="@string/app_name"
-            android:textColor="@color/colourWhite"
+            android:textColor="@color/white"
        		android:gravity="center"
        		android:paddingLeft="10dp" />
 
@@ -71,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/grpHeader"
-        android:background="@color/colourLightGray" >
+        android:background="@color/lightGray" >
 		
         <!-- Container for the "date from" filter. -->
         <LinearLayout
@@ -170,7 +170,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/grpFilters"
-        android:background="@color/colourWhite" >
+        android:background="@color/white" >
 
     </LinearLayout>
     
@@ -182,7 +182,7 @@
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentBottom="true"
-	    android:background="@color/colourLightGray" >
+	    android:background="@color/lightGray" >
         
 	    <!-- Accounts button, takes the user to the accounts screen. -->
         <Button
@@ -216,12 +216,11 @@
 	    style="@style/LinearWrap.Vertical"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:background="@color/colourLightGray"
+	    android:background="@color/lightGray"
 	    android:visibility="gone" >
         
 	    <!-- TODO: Determine layout colour and size properties. -->
 	</LinearLayout>
 	
-	<!-- TODO: Consider setting a more constants. -->
    	<!-- TODO: Add icons/images to buttons. -->
 </RelativeLayout>

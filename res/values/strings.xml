@@ -3,10 +3,10 @@
 
     <string name="app_name">budgeter</string>
     <string name="menu_settings">Settings</string>
-	<color name="colourWhite">#F1F1F1</color>
-    <color name="colourBlue">#47BAE7</color>
-    <color name="colourRed">#A61C00</color>
-    <color name="colourLightGray">#E7E7E7</color>
-    <color name="colourDarkGray">#B7B7B7</color>
-    <color name="colourMediumGray">#999</color>
+	<color name="white">#F1F1F1</color>
+    <color name="blue">#47BAE7</color>
+    <color name="red">#A61C00</color>
+    <color name="lightGray">#E7E7E7</color>
+    <color name="darkGray">#B7B7B7</color>
+    <color name="mediumGray">#999</color>
 </resources>
