@@ -26,6 +26,14 @@
        		android:gravity="center"
        		android:paddingLeft="10dp" />
 
+        <!-- Filter button, displays the current filters. -->
+        <Button
+            android:id="@+id/btnFilters"
+            style="@style/Button.Right"
+            android:layout_width="35dp"
+        	android:layout_height="35dp"
+            android:layout_marginRight="140dp" />
+
         <!-- Context-sensitive add button, adds a new item. -->
         <Button
             android:id="@+id/btnAdd"
@@ -63,74 +71,6 @@
     	<!-- TODO: Add shadow. -->
     </RelativeLayout>
     
-    <!-- Container to horizontally display dates. -->
-    <LinearLayout
-        android:id="@+id/grpFilters"
-        style="@style/LinearWrap.Horizontal.Filter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/grpHeader"
-        android:background="@color/lightGray" >
-		
-        <!-- Container for the "date from" filter. -->
-        <LinearLayout
-	        style="@style/LinearWrap.Horizontal.Filter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-            
-            <Button
-	            android:id="@+id/btnPreviousDateFrom"
-	            style="@style/Button"
-	            android:layout_width="35dp"
-	        	android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal" />
-            <TextView
-            	android:id="@+id/lblDateFrom"
-	            style="@style/Text.Filter"
-	            android:layout_width="wrap_content"
-	            android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal"
-        		android:text="12 February 2013"
-        		android:gravity="center"
-        		android:padding="10dp" />
-            <Button
-	            android:id="@+id/btnNextDateFrom"
-	            style="@style/Button"
-	            android:layout_width="35dp"
-	        	android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-        
-        <!-- Container for the "date to" filter. -->	
-        <LinearLayout
-	        style="@style/LinearWrap.Horizontal.Filter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-            
-            <Button
-	            android:id="@+id/btnPreviousDateTo"
-	            style="@style/Button"
-	            android:layout_width="35dp"
-	        	android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal" />
-            <TextView
-            	android:id="@+id/lblDateTo"
-	            style="@style/Text.Filter"
-	            android:layout_width="wrap_content"
-	            android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal"
-        		android:text="12 March 2013"
-        		android:gravity="center"
-        		android:padding="10dp" />
-            <Button
-	            android:id="@+id/btnNextDateTo"
-	            style="@style/Button"
-	            android:layout_width="35dp"
-	        	android:layout_height="35dp"
-        		android:layout_gravity="center_horizontal" />
-        </LinearLayout>
-    </LinearLayout>
-    
     <!-- Container to vertically list accounts, budgets, and transactions. -->
 
     <LinearLayout
@@ -138,7 +78,7 @@
         style="@style/LinearWrap.Vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/grpFilters"
+        android:layout_below="@id/grpHeader"
         android:background="@color/white" >
 
     </LinearLayout>
