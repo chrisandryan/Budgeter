@@ -1,0 +1,107 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grpMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        
+
+<RelativeLayout
+        android:id="@+id/grpHeader"
+        style="@style/Group"
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+
+        android:background="@color/blue"
+        android:orientation="horizontal">
+
+        <!-- Context : Text. Current context. -->
+
+        <TextView
+            android:id="@+id/txtContext"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="true"
+            android:text="Budgets"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/Button"
+            android:layout_width="@dimen/button2"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="110dp"
+            android:background="@drawable/add_button" />
+
+        <Button
+            android:id="@+id/btnSummary"
+            style="@style/Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/summary_button" />
+
+        <Button
+            android:id="@+id/btnHome"
+            style="@style/Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/home_button" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray3" >
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    
+      <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/grpHeader" >
+
+    </android.support.v4.view.ViewPager>
+
+  
+    
+     <!-- Footer : Group. Displays the current state. -->
+
+    <LinearLayout
+        android:id="@+id/grpFooter"
+        style="@style/Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray1"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/img_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="&quot;Accounts&quot;"
+            android:src="@drawable/budgets_view" />
+    </LinearLayout>
+
+<include layout="@layout/summary_floating"/>
+
+</RelativeLayout>

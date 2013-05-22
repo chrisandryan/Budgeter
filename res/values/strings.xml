@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">budgeter</string>
-    
-    <!-- Contexts -->
-    <string name="contextAccounts">Accounts</string>
+    <string name="app_name">BudgetManager</string>
+	<string name="contextAccounts">Accounts</string>
     <string name="contextBudgets">Budgets</string>
     <string name="contextTransactions">Transactions</string>
     
-    <!-- Colours. -->
-	<color name="white">#F1F1F1</color>
-    <color name="blue">#47BAE7</color>
-    <color name="red">#A61C00</color>
-    <color name="gray1">#E7E7E7</color>
-    <color name="gray2">#999999</color>
-    <color name="gray3">#B7B7B7</color>
+    
 
-    <!-- Size values. -->
-    <string name="button1">15dp</string>
-    <string name="button2">35dp</string>
 </resources>
