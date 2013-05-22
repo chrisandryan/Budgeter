@@ -82,7 +82,8 @@
             android:layout_width="35dp"
             android:layout_height="match_parent"
             
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp"
+            android:background="@drawable/summary_button" />
     </RelativeLayout>
 
     <!-- Content : Group. Displays items for the given context. -->
