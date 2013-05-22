@@ -116,20 +116,26 @@
             android:id="@+id/btnAccounts"
             android:layout_width="@string/button1"
             android:layout_height="@string/button1"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            
+            android:background="@drawable/circle_button" />
 
         <!-- Budgets : Button. Changes the context to Budgets. -->
         <Button
             android:id="@+id/btnBudgets"
             android:layout_width="@string/button1"
             android:layout_height="@string/button1"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            
+            android:background="@drawable/circle_button" />
 
         <!-- Transactions : Button. Changes the context to Transactions. -->
         <Button
             android:id="@+id/btnTransactions"
             android:layout_width="@string/button1"
             android:layout_height="@string/button1"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            
+            android:background="@drawable/circle_button" />
     </LinearLayout>
 </RelativeLayout>
