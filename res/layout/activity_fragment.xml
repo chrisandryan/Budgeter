@@ -27,7 +27,7 @@
             android:layout_centerHorizontal="false"
             android:layout_centerInParent="false"
             android:layout_centerVertical="true"
-            android:text="Budgets"
+            android:text="@string/contextBudgets"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:contentDescription="&quot;Accounts&quot;"
+            android:contentDescription="@string/descriptionAccounts"
             android:src="@drawable/budgets_view" />
     </LinearLayout>
 

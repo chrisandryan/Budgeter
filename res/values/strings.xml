@@ -6,6 +6,8 @@
     <string name="contextBudgets">Budgets</string>
     <string name="contextTransactions">Transactions</string>
     
+    <string name="descriptionAccounts">&quot;Accounts&quot;</string>
+    
     
 
 </resources>
