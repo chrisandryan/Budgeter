@@ -7,7 +7,6 @@
     <string name="contextTransactions">Transactions</string>
     
     <string name="descriptionAccounts">&quot;Accounts&quot;</string>
-    
-    
+    <string name="separator">Separator</string>
 
 </resources>
